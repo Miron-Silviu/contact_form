@@ -581,10 +581,6 @@ video {
   display: block;
 }
 
-.min-h-lvh {
-  min-height: 100lvh;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -611,9 +607,12 @@ video {
   border-width: 1px;
 }
 
-.bg-blue-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity, 1));
+.border-2 {
+  border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .bg-green-200 {
@@ -644,21 +643,13 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.font-\[\'Inconsolata\'\] {
-  font-family: 'Inconsolata';
-}
-
-.font-\[\'Karla\'\] {
-  font-family: 'Karla';
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xl {
   font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
