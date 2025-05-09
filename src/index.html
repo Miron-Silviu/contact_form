@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -20,33 +18,23 @@
     />
     <title>Contact form</title>
   </head>
-  <body class="bg-green-200 font-['Karla']">
-    <div class="bg-stone-100 rounded-lg mx-2 my-2 min-h-lvh">
-      <h1 class="font-family: 'Inconsolata', monospace font-black text-xl mx-5">
-        Contact Us
-      </h1>
-      <form class="block bg-blue-200">
-        <label for="fistName">First Name </label>
-        <input
-          type="name"
-          id="fistName"
-          class="appearance-none border rounded px-3 py-2"
-        />
+  <body class="bg-green-200 font-Karla">
+    <div class="bg-stone-100 rounded-lg mx-2 my-2 min-h-screen p-4">
+      <h1 class="font-Inconsolata font-black text-xl mx-5 mb-4">Contact Us</h1>
+      <form action="#" method="POST" class="block p-5 rounded-lg">
+        <!-- Label and Input Block for First Name -->
+        <div class="mb-4">
+          <label for="firstName" class="block text-lg font-medium mb-2"
+            >First Name</label
+          >
+          <input
+            type="text"
+            id="firstName"
+            class="appearance-none border rounded px-3 py-2 w-full"
+          />
+        </div>
+        <!-- Add more input fields here -->
       </form>
     </div>
-
-    <!-- <p class="font-['Inconsolata']">This uses Inconsolata</p>
-    Contact Us First Name This field is required Last Name This field is
-    required Email Address Please enter a valid email address This field is
-    required Query Type General Enquiry Support Request Please select a query
-    type Message This field is required I consent to being contacted by the team
-    To submit this form, please consent to being contacted Submit Message Sent!
-    Thanks for completing the form. We'll be in touch soon! -->
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Silviu Miron</a>.
-    </div> -->
   </body>
 </html>
