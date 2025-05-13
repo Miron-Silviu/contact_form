@@ -58,12 +58,15 @@
           <label for="firstName" class="block text-lg font-medium mb-2"
             >Query Type *</label
           >
+
           <div class="border-2 inline-blockflex">
-            <input
-              type="checkbox"
-              class="appearance-none checked:bg-blue-500"
-            />
-            <p>General Enquiry</p>
+            <input type="radio" id="general" name="general" value="huey" />
+            <label for="support">General Enquiry</label>
+          </div>
+
+          <div class="border-2 inline-blockflex">
+            <input type="radio" id="support" name="support" value="support" />
+            <label for="support">Support Request</label>
           </div>
         </div>
       </form>
