@@ -3,26 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="./output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./src/output.css" />
     <title>Contact form</title>
   </head>
   <body class="bg-green-200 font-Karla">
     <div class="bg-stone-100 rounded-lg mx-2 my-2 min-h-screen p-4">
       <h1 class="font-Inconsolata font-black text-xl mx-5 mb-4">Contact Us</h1>
       <form action="#" method="POST" class="block p-5 rounded-lg">
-        <!-- Label and Input Block for First Name -->
+        <!-- First Name -->
         <div class="mb-4">
           <label for="firstName" class="block text-lg font-medium mb-2"
             >First Name *</label
@@ -33,58 +21,67 @@
             class="appearance-none rounded px-3 py-2 w-full border-2"
           />
         </div>
+
+        <!-- Last Name -->
         <div class="mb-4">
-          <label for="firstName" class="block text-lg font-medium mb-2"
+          <label for="lastName" class="block text-lg font-medium mb-2"
             >Last Name *</label
           >
           <input
             type="text"
-            id="firstName"
+            id="lastName"
             class="appearance-none rounded px-3 py-2 w-full border-2"
           />
         </div>
+
+        <!-- Email -->
         <div class="mb-4">
-          <label for="firstName" class="block text-lg font-medium mb-2"
+          <label for="email" class="block text-lg font-medium mb-2"
             >Email Address *</label
           >
           <input
             type="email"
-            id="firstName"
+            id="email"
             class="appearance-none rounded px-3 py-2 w-full border-2"
           />
         </div>
 
+        <!-- Query Type -->
         <div class="mb-4">
-          <label for="firstName" class="block text-lg font-medium mb-2"
-            >Query Type *</label
-          >
+          <p class="block text-lg font-medium mb-2">Query Type *</p>
 
-          <div class="border-2 inline-blockflex mb-4 py-2 rounded-lg m-2">
+          <div class="border-2 inline-block mb-2 py-2 px-4 rounded-lg m-2">
             <input
               type="radio"
               id="general"
-              name="general"
-              value="huey"
-              class="ml-2"
+              name="query"
+              value="general"
+              class="mr-2"
             />
-            <label for="support" class="m-10">General Enquiry</label>
+            <label for="general">General Enquiry</label>
           </div>
 
-          <div class="border-2 inline-blockflex py-2 rounded-lg">
-            <input type="radio" id="support" name="support" value="support" />
+          <div class="border-2 inline-block py-2 px-4 rounded-lg m-2">
+            <input
+              type="radio"
+              id="support"
+              name="query"
+              value="support"
+              class="mr-2"
+            />
             <label for="support">Support Request</label>
           </div>
         </div>
-        <div class="mb-4">
-          <label for="firstName" class="block text-lg font-medium mb-2"></label>
-            Message*</label
+
+        <!-- Message -->
+        <div class="mb-8">
+          <label for="message" class="block text-lg font-medium mb-2"
+            >Message *</label
           >
-          <!-- <input
-            type="text"
-            id="text"
-            class="appearance-none rounded px-3 py-2 w-full border-2 h-12"
-          /> -->
-          <textarea class="appearance-none rounded px-3 py-2 w-full border-2 max-h-32"></textarea>
+          <textarea
+            id="message"
+            class="appearance-none rounded px-3 py-2 w-full border-2 h-80"
+          ></textarea>
         </div>
       </form>
     </div>
