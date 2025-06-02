@@ -615,6 +615,10 @@ video {
           appearance: none;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -712,10 +716,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-full {
-    width: 100%;
-  }
-
   .sm\:w-96 {
     width: 24rem;
   }
@@ -724,5 +724,25 @@ video {
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
+  }
+
+  .md\:w-8 {
+    width: 2rem;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:w-7\/12 {
+    width: 58.333333%;
+  }
+
+  .md\:w-svw {
+    width: 100svw;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 }
