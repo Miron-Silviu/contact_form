@@ -723,6 +723,10 @@ video {
     display: flex;
   }
 
+  .md\:inline-flex {
+    display: inline-flex;
+  }
+
   .md\:w-96 {
     width: 24rem;
   }
