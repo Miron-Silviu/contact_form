@@ -6,93 +6,117 @@
     <link rel="stylesheet" href="./output.css" />
     <title>Contact form</title>
   </head>
-  <body class="bg-green-200 font-Karla">
-    <div class="bg-stone-100 rounded-lg mx-2 my-2 min-h-screen p-4">
-      <h1 class="font-Inconsolata font-black text-xl mx-5 mb-4">Contact Us</h1>
+  <!-- Body -->
+  <body class="body_container bg-green-200 font-Karla">
+    <div
+      class="main_container bg-stone-100 rounded-lg mx-2 my-2 min-h-screen p-4"
+    >
+      <h1 class="header_info font-Inconsolata font-black text-xl mx-5 mb-4">
+        Contact Us
+      </h1>
       <form action="#" method="POST" class="block p-5 rounded-lg">
         <!-- First Name -->
-        <div class="sm:block xs:block">
-          <div class="mb-4">
-            <label for="firstName" class="block text-lg font-medium mb-2"
+        <div class="name_block sm:block xs:block">
+          <div class="fist_name_block mb-4">
+            <label
+              for="firstName"
+              class="first_name_label block text-lg font-medium mb-2"
               >First Name *</label
             >
             <input
               type="text"
               id="firstName"
-              class="appearance-none rounded px-3 py-2 w-full border-2"
+              class="first_name_input appearance-none rounded px-3 py-2 w-full border-2"
             />
           </div>
 
           <!-- Last Name -->
-          <div class="mb-4">
-            <label for="lastName" class="block text-lg font-medium mb-2"
+          <div class="last_name_block mb-4">
+            <label
+              for="lastName"
+              class="last_name_label block text-lg font-medium mb-2"
               >Last Name *</label
             >
             <input
               type="text"
               id="lastName"
-              class="appearance-none rounded px-3 py-2 w-full border-2"
+              class="last_name_input appearance-none rounded px-3 py-2 w-full border-2"
             />
           </div>
         </div>
         <!-- Email -->
-        <div class="mb-4">
-          <label for="email" class="block text-lg font-medium mb-2"
+        <div class="email_block mb-4">
+          <label for="email" class="label_email block text-lg font-medium mb-2"
             >Email Address *</label
           >
           <input
             type="email"
             id="email"
-            class="appearance-none rounded px-3 py-2 w-full border-2"
+            class="input_email appearance-none rounded px-3 py-2 w-full border-2"
           />
         </div>
 
         <!-- Query Type -->
         <!-- TODO -->
-        <div class="mb-4">
-          <p class="block text-lg font-medium mb-2">Query Type *</p>
-          <div class="bg bg-red-500 md:flex md:justify-between">
-            <div class="border-2 inline-block mb-2 py-2 px-4 rounded-lg m-2">
+        <div class="query_container mb-4">
+          <p class="query_info block text-lg font-medium mb-2">Query Type *</p>
+          <div
+            class="radi0_containers bg bg-red-500 md:flex md:justify-between"
+          >
+            <div
+              class="general_enquiry border-2 inline-block mb-2 py-2 px-4 rounded-lg m-2"
+            >
               <input
                 type="radio"
                 id="general"
                 name="query"
                 value="general"
-                class="mr-2 md:w-96 md:inline-flex h-2"
+                class="general_input mr-2 md:w-96 md:inline-flex h-2"
               />
-              <label for="general">General Enquiry</label>
+              <label for="general" class="general_lable">General Enquiry</label>
             </div>
-            <div class="border-2 inline-block py-2 px-4 rounded-lg m-2">
+            <div
+              class="support_request border-2 inline-block py-2 px-4 rounded-lg m-2"
+            >
               <input
                 type="radio"
                 id="support"
                 name="query"
                 value="support"
-                class="mr-2 md:w-96 md:inline-flex h-2"
+                class="support_input mr-2 md:w-96 md:inline-flex h-2"
               />
-              <label for="support">Support Request</label>
+              <label for="support" class="support-label">Support Request</label>
             </div>
           </div>
         </div>
         <!-- Message -->
-        <div class="mb-8">
-          <label for="message" class="block text-lg font-medium mb-2"
+        <div class="message_container mb-8">
+          <label
+            for="message"
+            class="message_lable block text-lg font-medium mb-2"
             >Message *</label
           >
           <textarea
             id="message"
-            class="appearance-none rounded px-3 py-2 w-full border-2 h-80"
+            class="textarea_message appearance-none rounded px-3 py-2 w-full border-2 h-80"
           ></textarea>
         </div>
 
         <!-- Consent -->
-        <div class="mb-4">
-          <input type="checkbox" id="consent" name="consent" />
-          <label for="consent">I consent to be contacted be the team *</label>
+        <div class="checkbox_container mb-4">
+          <input
+            type="checkbox"
+            id="consent"
+            name="consent"
+            class="checkbox_input"
+          />
+          <label for="consent" class="label_checkbox"
+            >I consent to be contacted be the team *</label
+          >
         </div>
         <!-- button -->
         <button
-          class="bg-emerald-800 text-white px-4 py-2 rounded hover:bg-emerald-900 transition w-full"
+          class="main_button bg-emerald-800 text-white px-4 py-2 rounded hover:bg-emerald-900 transition w-full"
         >
           Submit
         </button>
