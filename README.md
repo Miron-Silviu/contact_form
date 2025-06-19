@@ -44,6 +44,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+In the first instance the folder was accessed. Next the tailwindcss was installed with CLI tool.
+
 ### Built with
 
 - Semantic HTML5 markup
