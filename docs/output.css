@@ -642,6 +642,11 @@ video {
   background-color: rgb(245 245 244 / var(--tw-bg-opacity, 1));
 }
 
+.bg-orange-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(194 65 12 / var(--tw-bg-opacity, 1));
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -681,25 +686,13 @@ video {
   font-family: Karla, sans-serif;
 }
 
-.text-2xl {
-  font-size: 1.563rem;
+.text-3xl {
+  font-size: 1.953rem;
 }
 
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-5xl {
-  font-size: 3.052rem;
-}
-
-.text-4xl {
-  font-size: 2.441rem;
-}
-
-.text-3xl {
-  font-size: 1.953rem;
 }
 
 .font-medium {
