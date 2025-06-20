@@ -642,11 +642,6 @@ video {
   background-color: rgb(245 245 244 / var(--tw-bg-opacity, 1));
 }
 
-.bg-yellow-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -682,18 +677,29 @@ video {
   padding-right: 4rem;
 }
 
+.font-fontFamily {
+  font-family: Karla, sans-serif;
+}
+
+.text-2xl {
+  font-size: 1.563rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-5xl {
+  font-size: 3.052rem;
 }
 
-.font-black {
-  font-weight: 900;
+.text-4xl {
+  font-size: 2.441rem;
+}
+
+.text-3xl {
+  font-size: 1.953rem;
 }
 
 .font-medium {
